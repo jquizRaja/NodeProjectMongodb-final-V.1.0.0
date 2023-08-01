@@ -1,0 +1,9 @@
+2023-31-24	07:31:21	cd6f7212-3831-45f6-a77e-1940cef37bed	TypeError:fsPromises.readFil is not a function
+2023-31-24	07:31:26	f15db5c8-9510-483a-b517-58f980632a07	TypeError:fsPromises.readFil is not a function
+29 July 2023	13:43:30	2589d2b9-1ade-4869-9cd8-59a117d741f7	Error:Not Allowed by CORS
+29 July 2023	13:43:30	1b4523bb-fb01-4036-998a-d301e0d1ddbf	Error:Not Allowed by CORS
+29 July 2023	13:51:56	a4bc3efa-6c5e-433c-95c5-f9b1373c26af	Error:Not Allowed by CORS
+29 July 2023	13:51:56	e7deaeda-39f6-461a-b91d-8ffb12bbfbaa	Error:Not Allowed by CORS
+29 July 2023	13:59:32	c1307bcf-55de-4149-9209-99058a743dc6	Error:Not Allowed by CORS
+29 July 2023	23:01:24	0bb43b75-b5d8-486e-aaaf-ea4fae911907	TypeError:res.send.json is not a function
+29 July 2023	23:01:25	f2b57778-8659-4689-91ad-4fb8fa3ab067	TypeError:res.send.json is not a function
