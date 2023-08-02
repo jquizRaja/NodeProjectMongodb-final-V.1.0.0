@@ -3,8 +3,13 @@ const router = express.Router();
 const path = require("path");
 
 router.get("^/$|/index(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname,"..", "views", "index.html"));
+  res.render(path.join(__dirname,"..", "views", "index.ejs"));
 });
+
+// router.get("^/$|/index(.html)?", (req, res) => {
+//   res.render(path.join(__dirname, "..", "views", "index.html"));
+// });
+
 router.get("/new-page(.html)?", (req, res) => {
   res.sendFile(path.join(__dirname,"..", "views", "new-page.html"));
 });

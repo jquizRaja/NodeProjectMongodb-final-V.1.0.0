@@ -1,1 +1,2 @@
-this is final version 1.0.0 complete with error handling and mongo db connection connected successfully uploaded to github to save and working in progress as we progress will update with updating versioning
+this is backend and front server seprated installed in backend nodejs and mongodb installed in frontend nextjs is installed 
+this will new version v1.0.1

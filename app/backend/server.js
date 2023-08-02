@@ -8,8 +8,12 @@ const corsOptions = require("./config/corsOptions");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
 const { default: mongoose } = require("mongoose");
+const authRoutes = require("./routes/auth-routes");
+const passportSetup = require("./config/passport-setup");
+const keys = require("./config/keys");
 
-connectDB();
+//connectDB();both are working 
+connectDB(keys.mongodb.dbURI);
 
 const PORT = process.env.PORT || 3500;
 //custom middleware logger
@@ -21,12 +25,14 @@ app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: false }));
 //built in middleware for json
 app.use(express.json());
+app.set("view engine", "ejs");
 //serve static files
 app.use("/", express.static(path.join(__dirname, "/public")));
 app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
 //Routes main,subdir,employees,
 app.use("/", require("./routes/root"));
+app.use("/auth", authRoutes);
 app.use("/subdir", require("./routes/subdir"));
 app.use("/employees", require("./routes/api/employees"));
 
